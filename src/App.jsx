@@ -1,12 +1,9 @@
 import React from 'react'
-import { useState } from 'react'
-
+import Header from '../Components/Header'
 function App() {
-   var [a,updateMArks]=useState(80)
   return (
-    <div>
-      <button onClick={()=>updateMArks(a=a+1)} h-12 w-32>Click me</button>
-      <p>{a}</p>
+    <div className='h-8 w-screen bg-red-700'>
+      <Header/>
     </div>
   )
 }
